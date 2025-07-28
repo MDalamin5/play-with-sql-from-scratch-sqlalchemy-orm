@@ -1,0 +1,44 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "MySQL Local",
+            "database": "alamindb",
+            "username": "root",
+            "password": "Alamin@apple5",
+            "connectionTimeout": 30
+        },
+        {
+            "previewLimit": 50,
+            "server": "101.2.165.190",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "GTR",
+            "database": "Alfred",
+            "username": "postgres",
+            "password": "Tr@de@!007",
+            "connectionTimeout": 30
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "phone_db",
+            "database": "phone",
+            "username": "root",
+            "password": "Alamin@apple5"
+        }
+    ]
+}
