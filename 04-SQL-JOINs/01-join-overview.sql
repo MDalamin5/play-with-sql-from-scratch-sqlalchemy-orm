@@ -1,1 +1,3 @@
-SELECT * FROM users
+-- database: flipkart
+
+SELECT * FROM orders
