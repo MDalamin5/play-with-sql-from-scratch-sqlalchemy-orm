@@ -39,6 +39,36 @@
             "database": "phone",
             "username": "root",
             "password": "Alamin@apple5"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "sql_cx_live_db",
+            "database": "sql_cx_live",
+            "username": "root",
+            "password": "Alamin@apple5",
+            "connectionTimeout": 50
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "flipkart_db",
+            "database": "flipkart",
+            "username": "root",
+            "password": "Alamin@apple5",
+            "connectionTimeout": 30
         }
     ]
 }
