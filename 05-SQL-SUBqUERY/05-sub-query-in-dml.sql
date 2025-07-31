@@ -1,0 +1,1 @@
+-- get the percentage of votes for each movie compared to the total number of votes.
