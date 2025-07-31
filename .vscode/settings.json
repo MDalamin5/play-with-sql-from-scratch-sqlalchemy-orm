@@ -69,6 +69,21 @@
             "username": "root",
             "password": "Alamin@apple5",
             "connectionTimeout": 30
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "subQueryData",
+            "database": "sq",
+            "username": "root",
+            "password": "Alamin@apple5",
+            "connectionTimeout": 30
         }
     ]
 }
