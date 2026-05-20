@@ -11,3 +11,8 @@ CREATE TABLE persons (
 
 SELECT *
 FROM persons
+
+-- add a new column in person table
+
+ALTER TABLE persons
+ADD email VARCHAR(30) NOT NULL
