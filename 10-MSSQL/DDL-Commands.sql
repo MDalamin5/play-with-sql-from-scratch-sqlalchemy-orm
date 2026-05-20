@@ -16,3 +16,8 @@ FROM persons
 
 ALTER TABLE persons
 ADD email VARCHAR(30) NOT NULL
+
+-- remove the phone table from the table
+
+ALTER TABLE persons
+DROP column phone 
