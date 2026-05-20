@@ -8,5 +8,11 @@ Values
     (6, 'Al Amin', 'BD', NULL),
     (7, 'Aminul', 'BD', NULL)
 
+-- view the table data
 SELECT *
 FROM customers
+
+-- INSERt without column name
+Insert into customers
+VALUEs
+    (8, 'Mohimen', 'USA', 456)
