@@ -21,3 +21,6 @@ ADD email VARCHAR(30) NOT NULL
 
 ALTER TABLE persons
 DROP column phone 
+
+-- Delete the table persons from the database
+DROP TABLE persons
