@@ -16,3 +16,17 @@ FROM customers
 Insert into customers
 VALUEs
     (8, 'Mohimen', 'USA', 456)
+
+
+-- copy data from 'customers' table into 'persons'
+INSERT into persons(id, person_name, birth_date, phone)
+
+--select the all input data for the person table.
+SELECT 
+id,
+first_name,
+NULL,
+'Unknown'
+FROM customers
+
+SELECT * FROM persons
