@@ -69,3 +69,7 @@ WHERE score is NULL
 
 DELETE FROM customers
 WHERE id > 5
+
+
+-- delete the data from the person table
+TRUNCATE TABLE persons
