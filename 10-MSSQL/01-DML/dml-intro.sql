@@ -39,4 +39,12 @@ SELECT * FROM persons
 -- WHERE <condition>
 -- NOTE: Always use where to avoid updating all rows
 
--- change 
+-- change the score of customer with ID 6 to 0
+
+UPDATE customers
+    SET id = 0
+        where id = 6
+
+-- view the table data
+SELECT *
+FROM customers
