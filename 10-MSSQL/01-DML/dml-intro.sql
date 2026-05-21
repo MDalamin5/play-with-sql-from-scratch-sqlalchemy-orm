@@ -47,4 +47,17 @@ UPDATE customers
 
 -- view the table data
 SELECT *
-FROM customers
+FROM customers 
+
+-- update one rwo two item
+
+UPDATE customers
+SET score = 400,
+    country = 'bd'
+WHERE id = 7
+
+-- update all NULL value in score column
+
+UPDATE customers
+    SET score = 0
+WHERE score is NULL
