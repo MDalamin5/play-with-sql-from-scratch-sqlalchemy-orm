@@ -30,3 +30,13 @@ NULL,
 FROM customers
 
 SELECT * FROM persons
+
+-- update syntax: 
+-- UPDATE table_name
+--  SET column1 = value1
+--      column2 = value2
+
+-- WHERE <condition>
+-- NOTE: Always use where to avoid updating all rows
+
+-- change 
