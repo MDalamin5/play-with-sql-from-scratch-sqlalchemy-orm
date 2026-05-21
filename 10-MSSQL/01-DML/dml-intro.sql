@@ -61,3 +61,11 @@ WHERE id = 7
 UPDATE customers
     SET score = 0
 WHERE score is NULL
+
+
+-- remove row from a table.
+-- syntax DELETE FROM table_name
+-- where conditions
+
+DELETE FROM customers
+WHERE id > 5
