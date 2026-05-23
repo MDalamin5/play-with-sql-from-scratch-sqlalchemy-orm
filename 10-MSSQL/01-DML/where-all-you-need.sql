@@ -22,3 +22,7 @@ WHERE country = 'USA' or country = 'Germany'
 SELECT *
 FROM customers
 WHERE country IN ('USA', 'Germany')
+
+
+-- Like Operator: Search for a pattern
+-- %: any char, _: exact char %in, %_%: %r%: maria, peter, rayan, r,
