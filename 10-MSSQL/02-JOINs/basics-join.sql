@@ -8,7 +8,17 @@ SELECT * FROM orders
 -- inner join
 -- get all customer along with their orders, but only for customer who have placed an order
 
-SELECT *
+SELECT 
+    id, 
+    first_name,
+    sales
 FROM customers
 INNER JOIN orders
 ON customers.id = orders.customer_id
+
+-- get all customer along with their orders and including those without orders
+
+SELECT *
+FROM customers as C
+LEFT JOIN orders as O
+on C.id = O.customer_id
