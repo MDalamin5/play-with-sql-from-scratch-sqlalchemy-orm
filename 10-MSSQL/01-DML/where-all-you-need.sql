@@ -26,3 +26,13 @@ WHERE country IN ('USA', 'Germany')
 
 -- Like Operator: Search for a pattern
 -- %: any char, _: exact char %in, %_%: %r%: maria, peter, rayan, r,
+
+-- find all customer who name start with 'M'
+SELECT *
+FROM customers
+WHERE first_name LIKE 'M%'
+
+-- find all customer who name middle char is r
+SELECT *
+FROM customers
+WHERE first_name LIKE '%r%'
