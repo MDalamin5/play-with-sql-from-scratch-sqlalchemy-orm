@@ -36,3 +36,9 @@ WHERE first_name LIKE 'M%'
 SELECT *
 FROM customers
 WHERE first_name LIKE '%r%'
+
+
+-- find a customer who name 3rd positions has 'r'
+SELECT *
+FROM customers
+WHERE first_name LIKE '__r%'
