@@ -18,7 +18,23 @@ ON customers.id = orders.customer_id
 
 -- get all customer along with their orders and including those without orders
 
-SELECT *
+SELECT 
+    C.id,
+    C.first_name,
+    O.order_id,
+    O.sales
 FROM customers as C
 LEFT JOIN orders as O
+on C.id = O.customer_id
+
+
+
+-- full join
+SELECT 
+    C.id,
+    C.first_name,
+    O.order_id,
+    O.sales
+FROM customers as C
+FULL JOIN orders as O
 on C.id = O.customer_id
