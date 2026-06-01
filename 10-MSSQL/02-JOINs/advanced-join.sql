@@ -16,3 +16,5 @@ FROM customers as C
 RIGHT JOIN orders as O
 ON C.id = O.customer_id
 WHERE C.id is NULl
+
+-- full anti join
