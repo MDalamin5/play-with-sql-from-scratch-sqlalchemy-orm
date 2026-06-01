@@ -25,3 +25,10 @@ FROM customers as c
 FULL JOIN orders as o
 ON c.id = o.customer_id
 where c.id is NULL or o.customer_id is NULL
+
+-- Get all customer along with their orders, but only for customers who have placed order.
+SELECT *
+FROM customers as c
+LEFT JOIN orders as o
+ON c.id = o.customer_id
+WHERE o.customer_id is NOT NULL
