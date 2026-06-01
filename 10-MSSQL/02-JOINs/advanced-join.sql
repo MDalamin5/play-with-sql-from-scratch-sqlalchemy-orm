@@ -20,3 +20,8 @@ WHERE C.id is NULl
 -- full anti join
 -- Find customers without orders and orders without customer.
 
+SELECT *
+FROM customers as c
+FULL JOIN orders as o
+ON c.id = o.customer_id
+where c.id is NULL or o.customer_id is NULL
