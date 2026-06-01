@@ -18,3 +18,5 @@ ON C.id = O.customer_id
 WHERE C.id is NULl
 
 -- full anti join
+-- Find customers without orders and orders without customer.
+
