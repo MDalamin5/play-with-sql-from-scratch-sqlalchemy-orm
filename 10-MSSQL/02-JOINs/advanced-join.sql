@@ -33,4 +33,5 @@ LEFT JOIN orders as o
 ON c.id = o.customer_id
 WHERE o.customer_id is NOT NULL
 
--- Cross Join
+-- Cross Join: Combine every row from the Left and Every row from the right.
+-- All possible combinations
