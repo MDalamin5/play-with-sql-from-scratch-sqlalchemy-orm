@@ -35,3 +35,8 @@ WHERE o.customer_id is NOT NULL
 
 -- Cross Join: Combine every row from the Left and Every row from the right.
 -- All possible combinations
+-- Generate all possible combinations of customer and orders.
+
+SELECT *
+FROM customers
+CROSS JOIN orders
