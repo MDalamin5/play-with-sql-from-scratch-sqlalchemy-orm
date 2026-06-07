@@ -21,3 +21,16 @@ SELECT
     EmployeeID,
     LastName
 FROM Sales.Employees
+
+-- First table control the table name
+SELECT
+    CustomerID as ID,
+    FirstName
+FROM Sales.Customers
+
+UNION
+
+SELECT 
+    EmployeeID,
+    LastName
+FROM Sales.Employees
