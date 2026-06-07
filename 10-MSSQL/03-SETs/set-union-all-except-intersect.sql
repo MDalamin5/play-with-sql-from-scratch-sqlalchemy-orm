@@ -1,3 +1,11 @@
+-- SQL RULES
+    -- R1: ORDER BY can be used only once
+    -- R2: Same Number of Column
+    -- R3: Matching Data type
+    -- R4: Same order of column
+    -- R5: First query controls Aliases
+    -- R6: Mapping Correctly column
+
 -- basics SET operations
 
 SELECT FirstName, LastName
