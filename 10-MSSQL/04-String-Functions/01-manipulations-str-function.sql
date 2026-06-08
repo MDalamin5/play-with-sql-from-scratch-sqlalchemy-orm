@@ -10,3 +10,9 @@ SELECT
     CONCAT(first_name, '-', country) as 'Name_Country'
 FROM customers
 
+-- UPPER, LOWER
+
+SELECT 
+    first_name, 
+    LOWER(first_name) as 'converting name'
+FROM customers
