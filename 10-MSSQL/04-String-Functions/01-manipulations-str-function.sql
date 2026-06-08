@@ -26,3 +26,9 @@ SELECT
     
 FROM customers
 -- WHERE first_name != TRIM(first_name)
+
+-- Replace: Specific character with a new character
+
+SELECT
+'123-334-4554' as 'Phone Number',
+REPLACE('123-334-4554', '-', '') as 'clean_phone'
