@@ -6,3 +6,10 @@ SELECT
 ROUND(3.456, 2) as 'Round_2', 
 ROUND(3.456, 1) as 'Round_1',
 ROUND(3.456, 0) as 'Round_0'
+
+
+-- Negative number to positive: ABS
+
+SELECT
+-123,
+ABS(-123) as 'absolute number'
