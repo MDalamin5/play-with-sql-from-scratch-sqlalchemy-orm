@@ -31,3 +31,13 @@ DATEPART(QUARTER, CreationTime) Quater,
 DATEPART(WEEKDAY, CreationTime) Week_day,
 DATEPART(WEEK, CreationTime) Week
 FROM Sales.Orders
+
+-- Part Extractions: DATENAME -> return the name of the date part.
+
+SELECT 
+CreationTime,
+DATENAME(MONTH, CreationTime) Month_Name,
+DATENAME(WEEK, CreationTime) Week_Name,
+DATENAME(WEEKDAY, CreationTime) WeekDay_name
+FROM 
+Sales.Orders
