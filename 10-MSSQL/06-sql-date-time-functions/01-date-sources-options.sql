@@ -16,3 +16,5 @@ YEAR(CreationTime) Year,
 MONTH(CreationTime) Month,
 DAY(CreationTime) Day
 FROM Sales.Orders
+
+-- DATEPART() -> Returns a specific part of a date as a Number.
