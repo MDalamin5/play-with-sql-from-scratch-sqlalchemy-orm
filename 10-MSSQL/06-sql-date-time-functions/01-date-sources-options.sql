@@ -18,3 +18,16 @@ DAY(CreationTime) Day
 FROM Sales.Orders
 
 -- DATEPART() -> Returns a specific part of a date as a Number.
+-- Syntax DATEPART(part, date)
+SELECT 
+CreationTime, 
+DATEPART(MONTH, CreationTime) D_creatoins,
+YEAR(CreationTime) Year, 
+MONTH(CreationTime) Month,
+DAY(CreationTime) Day,
+DATEPART(YEAR, CreationTime) D_Datepart,
+DATEPART(HOUR, CreationTime) D_Hour,
+DATEPART(QUARTER, CreationTime) Quater,
+DATEPART(WEEKDAY, CreationTime) Week_day,
+DATEPART(WEEK, CreationTime) Week
+FROM Sales.Orders
