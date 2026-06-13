@@ -41,3 +41,12 @@ DATENAME(WEEK, CreationTime) Week_Name,
 DATENAME(WEEKDAY, CreationTime) WeekDay_name
 FROM 
 Sales.Orders
+
+-- DateTrunc: its reset a datetime specific part
+
+SELECT 
+CreationTime,
+DATETRUNC(HOUR, CreationTime) Reset_Hour,
+DATETRUNC(MONTH, CreationTime) Reset_Month
+FROM 
+Sales.Orders
