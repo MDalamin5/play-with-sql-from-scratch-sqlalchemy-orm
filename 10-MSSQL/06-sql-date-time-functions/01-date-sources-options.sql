@@ -87,3 +87,20 @@ FROM
 Sales.Orders
 GROUP BY(DATETRUNC(YEAR, OrderDate))
 
+
+-- Show all orders that were placed during the month of FEB
+
+SELECT 
+MONTH(OrderDate) Month_CountNUm,
+
+count(*) Numof_Order
+FROM 
+Sales.Orders
+GROUP BY(MONTH(OrderDate))
+HAVING MONTH(OrderDate) = 2
+
+-- Optimize query
+SELECT 
+MONTH(OrderDate) Month_CountNUm
+from Sales.Orders
+where MONTH(OrderDate) = 2
