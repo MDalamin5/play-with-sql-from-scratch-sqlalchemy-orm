@@ -76,3 +76,14 @@ EOMONTH(CreationTime) 'End OF the Month'
 
 FROM 
 Sales.Orders
+
+
+-- Part Extraction use case: Data Aggregations
+-- How many orders placed each year?
+SELECT 
+DATETRUNC(YEAR, OrderDate),
+count(*)
+FROM 
+Sales.Orders
+GROUP BY(DATETRUNC(YEAR, OrderDate))
+
