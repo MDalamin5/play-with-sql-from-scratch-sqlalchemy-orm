@@ -50,3 +50,16 @@ DATETRUNC(HOUR, CreationTime) Reset_Hour,
 DATETRUNC(MONTH, CreationTime) Reset_Month
 FROM 
 Sales.Orders
+
+-- DateTrunc is use in the Data analysis level.
+
+SELECT 
+DATETRUNC(MONTH, CreationTime) CReations_time,
+
+COUNT(*)
+
+
+FROM 
+Sales.Orders
+
+GROUP BY(DATETRUNC(MONTH, CreationTime))
