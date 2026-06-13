@@ -63,3 +63,16 @@ FROM
 Sales.Orders
 
 GROUP BY(DATETRUNC(MONTH, CreationTime))
+
+
+-- EOMONTH() -> Return the last of the month date
+-- 2026-05-13 --> 2026-05-31
+
+SELECT 
+OrderID,
+CreationTime,
+EOMONTH(CreationTime) 'End OF the Month'
+
+
+FROM 
+Sales.Orders
