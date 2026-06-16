@@ -32,3 +32,5 @@ COUNT(*) Number_of_Order
 FROM
 Sales.Orders
 GROUP BY(FORMAT(OrderDate, 'MMM yy'))
+
+-- Date Standardizations
