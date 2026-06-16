@@ -23,3 +23,12 @@ CreationTime,
 'Day ' + FORMAT(CreationTime, 'ddd MMM ') + 'Q' + DATENAME(QUARTER, CreationTime) + FORMAT(CreationTime, ' yyyy') + FORMAT(CreationTime, 'hh:mm:ss tt') as 'Custom Format'
 FROM
 Sales.Orders
+
+-- Formatting Use Case Date Aggregations.
+-- How many order comes in specific date
+SELECT 
+FORMAT(OrderDate, 'MMM yy') Order_Month,
+COUNT(*) Number_of_Order
+FROM
+Sales.Orders
+GROUP BY(FORMAT(OrderDate, 'MMM yy'))
