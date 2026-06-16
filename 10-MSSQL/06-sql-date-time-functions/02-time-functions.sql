@@ -8,6 +8,11 @@ SELECT
 CreationTime,
 FORMAT(CreationTime, 'dd') as 'Date Number',
 FORMAT(CreationTime, 'ddd') as 'First 3 Latter',
-FORMAT(CreationTime, 'dddd') Full_Name
+FORMAT(CreationTime, 'dddd') Full_Name,
+FORMAT(CreationTime, 'mm') Month_as_Number,
+FORMAT(CreationTime, 'mmm') Month_as_2dig,
+FORMAT(CreationTime, 'mmmm') Month_as_full,
+-- won format
+FORMAT(CreationTime, 'dd-MM-yyyy') Own_format
 FROM 
 Sales.Orders
