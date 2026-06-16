@@ -1,1 +1,5 @@
 -- time functions
+-- Format the Day
+-- dd -> date only
+-- ddd -> First 3 chat of the day: Sun
+-- dddd -> full name of the data : Sunday
