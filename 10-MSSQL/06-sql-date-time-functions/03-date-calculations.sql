@@ -27,3 +27,11 @@ OrderDate,
 ShipDate,
 DATEDIFF(DAY, OrderDate, ShipDate)
 FROM Sales.Orders
+
+-- for each month
+SELECT 
+MONTH(OrderDate) as ORDERDate,
+AVG(DATEDIFF(DAY, OrderDate, ShipDate))
+FROM
+Sales.Orders
+GROUP BY MONTH(OrderDate)
