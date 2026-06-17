@@ -10,3 +10,12 @@ DATEADD(MONTH, -3, OrderDate) Reduce_2_Month,
 DATEADD(DAY, 10, OrderDate) Add10Days
 FROM
 Sales.Orders
+
+-- DateDIFF: Find the difference between two dates. 
+-- Problem: Calculate the age of the employees.
+
+SELECT 
+BirthDate,
+DATEDIFF(YEAR, BirthDate, GETDATE()) Age_Year
+FROM
+Sales.Employees
