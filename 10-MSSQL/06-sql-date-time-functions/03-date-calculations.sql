@@ -19,3 +19,11 @@ BirthDate,
 DATEDIFF(YEAR, BirthDate, GETDATE()) Age_Year
 FROM
 Sales.Employees
+
+-- Find the average shipping durations in days for each month
+SELECT
+OrderID,
+OrderDate, 
+ShipDate,
+DATEDIFF(DAY, OrderDate, ShipDate)
+FROM Sales.Orders
