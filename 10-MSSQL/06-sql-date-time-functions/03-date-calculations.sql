@@ -4,6 +4,9 @@
 -- DateADD(year, 2, OrderDate)
 
 SELECT 
-*
+OrderDate,
+DATEADD(YEAR, 2, OrderDate) Add_2_Years,
+DATEADD(MONTH, -3, OrderDate) Reduce_2_Month,
+DATEADD(DAY, 10, OrderDate) Add10Days
 FROM
 Sales.Orders
