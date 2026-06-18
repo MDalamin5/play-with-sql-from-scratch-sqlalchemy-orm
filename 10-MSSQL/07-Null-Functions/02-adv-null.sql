@@ -1,0 +1,1 @@
+-- THis null functions as like pandas Null functions
