@@ -35,3 +35,10 @@ AVG(DATEDIFF(DAY, OrderDate, ShipDate))
 FROM
 Sales.Orders
 GROUP BY MONTH(OrderDate)
+
+-- find the number of days between each order and previous order.
+SELECT *
+-- OrderDate
+FROM
+Sales.Orders
+-- GROUP BY OrderDate
