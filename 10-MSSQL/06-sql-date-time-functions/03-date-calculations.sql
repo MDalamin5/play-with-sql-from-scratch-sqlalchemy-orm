@@ -47,4 +47,7 @@ Sales.Orders
 
 -- ISDATE(): its return a value is date format or not
 SELECT
-ISDATE('124') DateCheck
+ISDATE('124') DateCheck,
+ISDATE('2016-10-10') Yes_date
+
+-- Cast table
