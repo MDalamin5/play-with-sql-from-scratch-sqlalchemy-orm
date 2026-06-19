@@ -44,3 +44,7 @@ LAG(OrderDate) OVER (ORDER BY OrderDate) Previous_date,
 DATEDIFF(DAY, LAG(OrderDate) OVER (ORDER BY OrderDate), OrderDate) NoOfGapBetweenOrder
 FROM
 Sales.Orders
+
+-- ISDATE(): its return a value is date format or not
+SELECT
+ISDATE('124') DateCheck
