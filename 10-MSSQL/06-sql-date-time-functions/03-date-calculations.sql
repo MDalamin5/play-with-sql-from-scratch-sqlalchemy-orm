@@ -38,7 +38,9 @@ GROUP BY MONTH(OrderDate)
 
 -- find the number of days between each order and previous order.
 SELECT 
-OrderDate
+OrderID,
+OrderDate as CurrentDate,
+LAG(OrderDate) OVER (ORDER BY OrderDate) Previous_date,
+DATEDIFF(DAY, LAG(OrderDate) OVER (ORDER BY OrderDate), OrderDate) NoOfGapBetweenOrder
 FROM
 Sales.Orders
--- GROUP BY OrderDate
