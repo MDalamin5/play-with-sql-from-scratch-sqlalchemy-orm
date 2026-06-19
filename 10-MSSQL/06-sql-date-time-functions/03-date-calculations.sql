@@ -37,8 +37,8 @@ Sales.Orders
 GROUP BY MONTH(OrderDate)
 
 -- find the number of days between each order and previous order.
-SELECT *
--- OrderDate
+SELECT 
+OrderDate
 FROM
 Sales.Orders
 -- GROUP BY OrderDate
