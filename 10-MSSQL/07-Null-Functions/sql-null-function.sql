@@ -1,0 +1,1 @@
+-- COALESCE, ISNULL, NULLIF, IS (NOT) NULL Functions
