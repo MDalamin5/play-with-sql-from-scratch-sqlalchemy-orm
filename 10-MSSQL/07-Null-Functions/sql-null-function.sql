@@ -1,1 +1,4 @@
 -- COALESCE, ISNULL, NULLIF, IS (NOT) NULL Functions
+
+-- NULL --> 40 : ISNULL | COALESCE
+-- 40 --> NULL : NULLIF
