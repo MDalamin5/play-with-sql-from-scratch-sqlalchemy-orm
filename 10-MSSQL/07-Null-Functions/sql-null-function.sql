@@ -1,4 +1,8 @@
 -- COALESCE, ISNULL, NULLIF, IS (NOT) NULL Functions
 
--- NULL --> 40 : ISNULL | COALESCE
--- 40 --> NULL : NULLIF
+-- Replace NULL: 
+    -- NULL --> 40 : ISNULL | COALESCE
+    -- 40 --> NULL : NULLIF
+
+-- CHECK NULL: 
+    -- ISNULL return true if null else false.
