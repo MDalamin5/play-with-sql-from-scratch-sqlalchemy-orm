@@ -12,7 +12,7 @@
 
 -- COALESCE(): Returns the first non-null value from the a list.
 
-SELECT 
-*
-FROM 
-Sales.Customers
+-- COALESCE(value1, value2, value3)
+-- COALESCE(shipping_address, unknown)
+-- COALESCE(shipping_address, billing_address)
+-- COALESCE(shipping_address, billing_address, unknown)
