@@ -16,3 +16,11 @@
 -- COALESCE(shipping_address, unknown)
 -- COALESCE(shipping_address, billing_address)
 -- COALESCE(shipping_address, billing_address, unknown)
+
+-- FInd the average score from the customer.
+SELECT 
+CustomerID,
+Score,
+AVG(Score) OVER() AVGsCORE
+FROM
+Sales.Customers
