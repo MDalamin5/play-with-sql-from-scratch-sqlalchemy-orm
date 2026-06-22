@@ -21,6 +21,8 @@
 SELECT 
 CustomerID,
 Score,
-AVG(Score) OVER() AVGsCORE
+COAlesce(Score, 0) Score_2,
+AVG(Score) OVER() AVGsCORE,
+AVG(coalesce(Score, 0)) OVER() Avg_new
 FROM
 Sales.Customers
