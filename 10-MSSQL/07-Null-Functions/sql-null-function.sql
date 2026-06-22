@@ -31,6 +31,12 @@ Sales.Customers
 -- Display the full name of the customers in a single field by merging their first and last names, and add 20 bonus point to the each customer score.
 
 SELECT
-*
+FirstName,
+LastName,
+COALESCE(LastName, '') LastNameU,
+COALESCE(Score, 0) NewScore,
+FirstName + COALESCE(LastName, '') as 'Full Name',
+COALESCE(Score, 0) + 20 as 'New Update Score'
+
 FROM
 Sales.Customers
