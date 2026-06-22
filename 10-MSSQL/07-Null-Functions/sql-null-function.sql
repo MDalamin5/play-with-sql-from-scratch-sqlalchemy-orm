@@ -26,3 +26,11 @@ AVG(Score) OVER() AVGsCORE,
 AVG(coalesce(Score, 0)) OVER() Avg_new
 FROM
 Sales.Customers
+
+-- Handling NULLS: Mathematical OPerations
+-- Display the full name of the customers in a single field by merging their first and last names, and add 20 bonus point to the each customer score.
+
+SELECT
+*
+FROM
+Sales.Customers
