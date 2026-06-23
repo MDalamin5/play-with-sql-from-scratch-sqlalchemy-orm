@@ -1,1 +1,2 @@
--- THis null functions as like pandas Null functions
+-- mssql-null function is close to postgressql
+-- 
