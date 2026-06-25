@@ -40,3 +40,9 @@ COALESCE(Score, 0) + 20 as 'New Update Score'
 
 FROM
 Sales.Customers
+
+
+-- Identify the customer who's score has note present.
+SELECT *
+FROM Sales.Customers
+WHERE Score is NULL
