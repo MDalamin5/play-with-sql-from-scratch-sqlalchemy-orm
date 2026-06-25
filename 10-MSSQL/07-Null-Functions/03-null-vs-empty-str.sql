@@ -1,1 +1,4 @@
 -- NUll Vs Empty string.
+-- NULL: Don't know anythings about its
+-- Empty String: its a 0 char data
+-- Blank Space: is string value or more space character.
