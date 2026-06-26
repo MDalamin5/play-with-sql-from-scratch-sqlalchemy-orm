@@ -13,3 +13,6 @@ SELECT
 *, 
 DATALENGTH(Category) CategoryLen
 FROM Orders
+
+-- to remove the empty space and the blank space we use 'TRIM'
+-- TRIM: remove the unwanted leading and trailing spaces from a string.
