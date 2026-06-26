@@ -41,3 +41,19 @@ SELECT
 TRIM(Category) AfterTrim,
 NULLIF(TRIM(Category), '') EmptyStrToNull
 FROM Orders;
+
+-- Data Policy
+-- Use the default value 'unknown' and avoid using nulls, empty string,and blank space
+
+WITH Orders AS (
+    SELECT 1 Id, 'A' Category UNION
+    SELECT 2, NULL UNION
+    SELECT 3, '' UNION
+    SELECT 4, '   '
+)
+SELECT
+*, 
+TRIM(Category) AfterTrim,
+NULLIF(TRIM(Category), '') EmptyStrToNull,
+coalesce(NULLIF(TRIM(Category), ''), 'unk') PutCustomToNull
+FROM Orders;
