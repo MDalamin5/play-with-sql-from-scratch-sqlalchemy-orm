@@ -27,4 +27,17 @@ SELECT
 *, 
 DATALENGTH(Category) CategoryLen,
 DATALENGTH(TRIM(Category)) AfterTrim
-FROM Orders
+FROM Orders;
+
+-- Put Empty string to a 'NULL'
+WITH Orders AS (
+    SELECT 1 Id, 'A' Category UNION
+    SELECT 2, NULL UNION
+    SELECT 3, '' UNION
+    SELECT 4, '   '
+)
+SELECT
+*, 
+TRIM(Category) AfterTrim,
+NULLIF(TRIM(Category), '') EmptyStrToNull
+FROM Orders;
