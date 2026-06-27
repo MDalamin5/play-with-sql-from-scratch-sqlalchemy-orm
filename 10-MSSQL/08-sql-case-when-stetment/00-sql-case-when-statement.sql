@@ -1,1 +1,2 @@
---
+-- what is Case Statement!
+-- Evaluate a list of conditions and returns a value when the first conditions is met
