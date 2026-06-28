@@ -20,6 +20,10 @@
 -- Sort the result from lowest to highest
 
 SELECT
+Category,
+SUM(Sales) as TotalSales
+FROM(
+SELECT
 OrderID,
 Sales,
 CASE
@@ -29,3 +33,6 @@ CASE
 END Category
 FROM
 Sales.Orders
+) t
+GROUP BY Category
+ORDER BY TotalSales DESC
