@@ -19,3 +19,13 @@
 --     - Low: if the sales equal or lower than 20
 -- Sort the result from lowest to highest
 
+SELECT
+OrderID,
+Sales,
+CASE
+    WHEN Sales > 50 THEN 'HIGH'
+    WHEN Sales > 20 THEN 'Medium'
+    ELSE 'LOW'
+END Category
+FROM
+Sales.Orders
