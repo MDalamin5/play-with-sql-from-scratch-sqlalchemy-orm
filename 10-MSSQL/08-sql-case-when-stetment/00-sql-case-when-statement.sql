@@ -65,3 +65,23 @@ SELECT
     END
 FROM
 Sales.Customers;
+
+
+-- Task: Find the average scores of customers and treat nulls as O and additional provide such CustomerId & LastName
+SELECT
+CustomerID,
+LastName,
+Score,
+Case
+    when Score is NULL then 0
+    else Score
+END ScoreClean,
+
+AVG(
+    Case
+    when Score is NULL then 0
+    else Score
+END
+) OVER() AggCustomerClean
+FROM
+Sales.Customers
