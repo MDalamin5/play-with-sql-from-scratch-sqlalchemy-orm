@@ -85,3 +85,18 @@ END
 ) OVER() AggCustomerClean
 FROM
 Sales.Customers
+
+-- Task: Count how many times each customer has made an order with sales greater then 30.
+SELECT
+CustomerID,
+
+
+SUM(
+    CASE
+    when Sales > 30 then 1
+    else 0
+END
+) TotalOrders
+FROM
+Sales.Orders
+GROUP BY CustomerID
