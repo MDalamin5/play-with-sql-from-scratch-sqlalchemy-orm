@@ -36,3 +36,20 @@ Sales.Orders
 ) t
 GROUP BY Category
 ORDER BY TotalSales DESC
+
+-- Retrieve customer details with abbreviated country code.
+SELECT
+    CustomerID,
+    FirstName,
+    LastName,
+    Country,
+    CASE
+        WHEN Country = 'Germany' THEN 'Ge'
+        WHEN Country = 'USA' THEN 'Us'
+        ELSE 'n/a'
+    END
+FROM
+Sales.Customers;
+
+SELECT DISTINCT Country
+FROM Sales.Customers
