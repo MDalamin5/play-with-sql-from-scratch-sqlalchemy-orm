@@ -5,4 +5,6 @@
 -- CASE: start of the logics
 --   WHEN conditions1 THEN result1
 --   WHEN conditions2 THEN result2
+--   ...
+--  ELSE result
 -- END: the end of the logics
