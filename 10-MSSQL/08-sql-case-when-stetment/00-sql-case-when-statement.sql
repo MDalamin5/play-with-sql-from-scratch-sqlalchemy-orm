@@ -51,5 +51,17 @@ SELECT
 FROM
 Sales.Customers;
 
-SELECT DISTINCT Country
-FROM Sales.Customers
+-- quick form of the case statement.
+
+SELECT
+    CustomerID,
+    FirstName,
+    LastName,
+    Country,
+    CASE Country
+        WHEN 'Germany' THEN 'Ge'
+        WHEN 'USA' THEN 'Us'
+        ELSE 'n/a'
+    END
+FROM
+Sales.Customers;
