@@ -12,3 +12,10 @@
 -- Main Purpose is Data Transformation
 -- Derive new information
 -- Create new Columns based on existing data
+
+-- SQL TASK: Generate a report showing the total sales for each category: 
+--     - HIGH: if the sales is higher then 50
+--     - Medium: if the sales is between 20 and 50
+--     - Low: if the sales equal or lower than 20
+-- Sort the result from lowest to highest
+
