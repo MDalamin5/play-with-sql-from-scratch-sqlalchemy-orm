@@ -8,3 +8,7 @@
 --   ...
 --  ELSE result
 -- END: the end of the logics
+
+-- Main Purpose is Data Transformation
+-- Derive new information
+-- Create new Columns based on existing data
