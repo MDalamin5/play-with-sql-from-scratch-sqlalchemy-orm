@@ -51,3 +51,8 @@ RANK() OVER(ORDER BY Sales DESC)  as RankSales
 FROM 
 Sales.Orders
 
+-- Frame Clause Syntax
+-- AVG(Sales) Over(partition by category Order By OrderDate ROWS Between Current Row and Unbounded row)
+-- Frame clause can only be used together with order by clause.
+-- Lower value must be Before the higher value.
+
