@@ -4,3 +4,18 @@
 -- Window: Advanced data analysis
 
 -- TASK: FIND the total sales across all orders
+
+SELECT 
+
+SUM(Sales) TotalSales
+FROM
+Sales.Orders
+
+-- TASK: FIND the total sales across each product
+
+SELECT
+ProductID,
+SUM(Sales) TotalSales
+FROM
+Sales.Orders
+GROUP BY ProductID
