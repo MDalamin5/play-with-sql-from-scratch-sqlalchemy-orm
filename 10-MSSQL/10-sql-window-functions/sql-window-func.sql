@@ -56,3 +56,11 @@ Sales.Orders
 -- Frame clause can only be used together with order by clause.
 -- Lower value must be Before the higher value.
 
+SELECT
+OrderID,
+OrderDate,
+OrderStatus,
+Sales,
+SUM(Sales) OVER(PARTITION BY OrderStatus ORDER BY OrderDate Rows BETWEEN CURRENT ROW AND 2 Following) TotalSales
+FROM
+Sales.Orders
