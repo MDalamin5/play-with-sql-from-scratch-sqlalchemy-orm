@@ -38,3 +38,16 @@ OrderStatus,
 SUM(Sales) OVER(PARTITION BY ProductID, OrderStatus)
 FROM
 Sales.Orders
+
+-- WINDOW FUNC: Order By
+-- TASK: Rank each order based on their sales from highest to lowest, additionally provide details such order id & order date
+
+SELECT
+OrderID,
+ProductID,
+OrderDate,
+Sales,
+RANK() OVER(ORDER BY Sales DESC)  as RankSales
+FROM 
+Sales.Orders
+
