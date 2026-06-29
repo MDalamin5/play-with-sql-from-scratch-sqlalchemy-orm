@@ -1,0 +1,2 @@
+-- They accepted multiply row but output is the singe value
+-- e.g. SUM, AVG
