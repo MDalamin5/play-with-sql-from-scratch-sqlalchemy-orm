@@ -19,3 +19,12 @@ SUM(Sales) TotalSales
 FROM
 Sales.Orders
 GROUP BY ProductID
+
+-- TASK: Find the total sales for each product, additionally provide details such order id & order date
+
+SELECT
+ProductID,
+OrderDate,
+SUM(Sales) OVER(PARTITION BY ProductID) TotalSales
+FROM
+Sales.Orders
