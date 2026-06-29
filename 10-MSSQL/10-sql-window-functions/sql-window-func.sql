@@ -27,4 +27,14 @@ ProductID,
 OrderDate,
 SUM(Sales) OVER(PARTITION BY ProductID) TotalSales
 FROM
+Sales.Orders;
+
+-- TASK: Find the total sales for each combination of product and order status
+SELECT
+OrderID,
+ProductID,
+OrderStatus,
+
+SUM(Sales) OVER(PARTITION BY ProductID, OrderStatus)
+FROM
 Sales.Orders
