@@ -36,3 +36,11 @@ SELECT
 COUNT(Score) OVER() TotalScore
 FROM
 Sales.Customers
+
+-- Check whether the table 'OrderArchive' contains any duplicate rows
+SELECT
+OrderID, 
+OrderDate,
+COUNT(*) OVER(PARTITION BY OrderID)
+FROM
+Sales.OrdersArchive
