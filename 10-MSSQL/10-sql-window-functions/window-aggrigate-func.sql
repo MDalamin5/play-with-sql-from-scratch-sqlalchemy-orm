@@ -17,3 +17,22 @@ SELECT
     COUNT(*) OVER(PARTITION BY CustomerID) OrderByCustomer
     FROM
     Sales.Orders
+
+-- TASK: Find the total number of customers, additionally provide all customer's details
+
+SELECT 
+CustomerID,
+FirstName,
+LastName,
+Country,
+Score,
+COUNT(*) OVER() TotalNUmberOfCustomer
+FROM
+Sales.Customers
+
+-- TASK: Find the total number of score for the customers
+SELECT
+*,
+COUNT(Score) OVER() TotalScore
+FROM
+Sales.Customers
