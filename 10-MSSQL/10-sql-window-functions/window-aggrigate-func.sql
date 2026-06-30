@@ -9,3 +9,11 @@ COUNT(Sales) OVER(PARTITION BY productId) NumberOfProduct
 FROM
 Sales.Orders
 
+-- TASK: Find the total number of order each customer, additionally provide details such order id, order date
+SELECT
+    OrderID,
+    OrderDate,
+    CustomerID,
+    COUNT(*) OVER(PARTITION BY CustomerID) OrderByCustomer
+    FROM
+    Sales.Orders
