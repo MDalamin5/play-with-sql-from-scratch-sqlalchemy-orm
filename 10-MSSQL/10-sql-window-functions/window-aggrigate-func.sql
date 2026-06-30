@@ -39,8 +39,12 @@ Sales.Customers
 
 -- Check whether the table 'OrderArchive' contains any duplicate rows
 SELECT
+*
+FROM (
+SELECT
 OrderID, 
 OrderDate,
-COUNT(*) OVER(PARTITION BY OrderID)
+COUNT(*) OVER(PARTITION BY OrderID) checkPK
 FROM
 Sales.OrdersArchive
+)t WHERE checkPK > 1
