@@ -1,0 +1,3 @@
+-- SUM, AVT, MIN, MAX, COUNT
+-- why they are called aggregated: its sum all value and return one value.
+-- Syntax: AVG(Sales) OVER (PARTITION by productId Orderby ProductName)
